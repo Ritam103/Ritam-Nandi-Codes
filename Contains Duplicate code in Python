@@ -5,7 +5,8 @@ class Solution:
         for num in nums:
             # Check if the current number is already in the set
             if num in seen:
-                return True
+                return True  # Duplicate found, return True immediately
             # Add the current number to the set
             seen.add(num)
-        return False
+        return False  # If no duplicates found, return False
+        
